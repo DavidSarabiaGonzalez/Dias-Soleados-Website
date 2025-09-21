@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="es">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Días Soleados – Espejos y Relojes</title>
+  <meta name="keywords" content="Vidrio,cristal,color,colores,stained glass,vidrio de colores,cristal de colores">
+  <meta name="description" content="Puedo diseñar y fabricar vidrios de colores a tu gusto en estilos tradicionales o modernos en alta calidad. Hay una gran selección de colores, texturas, tipos y densidades de cristal disponible.">
+
+<!-- Lightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="../Images/Favicon_16.webp">
+<link rel="icon" type="image/png" sizes="32x32" href="../Images/Favicon_32.webp">
+<link rel="icon" type="image/png" sizes="256x256" href="../Images/Favicon.webp">
+
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+  }
+
+  .header {
+    max-width:800px;
+    margin:0 auto;
+  }
+
+  .title {
+      font-family: 'Comic Sans MS';
+      font-style: italic;
+      font-size: 24px;
+      color:#81FF00;
+      font-weight:bold;
+    }
+
+    .container {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    border: 0;
+    border-top: 1px solid #00FF00 ;
+    border-bottom: 1px solid #00FF00;
+  }
+    .sidebar {
+    width: 170px;
+    padding: 15px;
+    border-right: 1px solid #00FF00;
+    background: #000;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .sidebar p, .sidebar a {
+    margin: 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11pt;
+    font-family: Verdana;
+    text-decoration: none;
+    display: block;
+  }
+
+  .sidebar h2 {
+    margin: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana, sans-serif;
+  }
+
+  .sidebar img {
+    border: 1px solid #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 15px;
+    justify-items: center;
+    padding: 15px;
+    height: fit-content;
+  }
+  .gallery img {
+    border: 3px solid #fff;
+    width: 200px;
+    height: 200px;
+    transition: border-color 0.5s ease;
+  }
+
+  .gallery img:hover{
+    border: 3px solid #00FF00;
+  }
+
+
+  /* BOTÓN MENÚ SOLO EN MÓVIL/TABLET */
+  .menu-btn {
+    display: none;
+    background: #00FF00;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+  }
+  .title {
+      font-family:Verdana, sans-serif;
+      font-style: italic;
+      font-size:18px;
+      color:#81FF00;
+      font-weight:bold;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header {
+      width: 100%;
+      margin:0 auto;
+    }
+
+  /* Sidebar oculta por defecto en móvil */
+  .sidebar {
+    position: fixed;
+    left: -220px;
+    top: 0;
+    height: 98%;
+    width: 180px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow: scroll;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  /* Botón menú visible en móvil */
+  .menu-btn {
+    display: block;
+    margin: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 0.5fr);
+    padding: 15px;
+    gap: 15px;
+  }
+  .gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid #81FF00;
+  }
+
+  .title {
+      font-family:Verdana, sans-serif;
+      font-style: italic;
+      font-size:18px;
+      color:#00FF00;
+      font-weight:bold;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- CONTENEDOR SUPERIOR CENTRADO -->
+<div class="header">
+
+  <!-- CENTRADOR -->
+  <div class="header">
+
+    <!-- FILA 1: LOGO + IDIOMA -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+      <!-- LOGO -->
+      <div>
+        <a href="../index-es.html"><img src="../images/sinfonia-logo.webp" alt="Logo" style="max-width:100%; height:auto;"></a>
+      </div>
+
+      <!-- ENLACE IDIOMA -->
+      <div style="text-align:right; margin-top:10px; flex:1;">
+        <a href="../English/gallery-4.html" style="color:#fff; text-decoration:none; font-weight:bold; font-family:Verdana, sans-serif; font-size:14px;">
+          English Version
+          <img src="../images/anonymous-union-jack-5000572.webp" alt="EN" style="width:25px; height:15px; vertical-align:middle; margin-left:5px;">
+        </a>
+      </div>
+    </div>
+
+    <!-- FILA 2: TÍTULOS -->
+    <div style="margin-top:10px; text-align:center;">
+      <span class="title"  style="color:#00FF00; font-weight:bold;">Galería 4</span>
+      <span class="title" style="color:#FFFFFF;"> - Espejos y Relojes</span>
+      <span class="title" style="color:#d7d7d7; font-weight: 400;"> - Pulse las imágenes para ver versiones más grandes</span>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+ <!-- BARRA LATERAL -->
+ <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+ <div class="sidebar" id="sidebar">
+   <h2><a href="../index-es.html" style="font-size: 17pt;">Inicio</a></h2>
+
+   <p>&nbsp;</p>
+
+   <p style="color:#81FF00">Galería 1</p>
+   <a href="galeria-1.html">Paneles y Ventanas
+     <img src="../images/63 panels_small.webp" alt="Paneles">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 2</p>
+   <a href="galeria-2.html">Atrapasoles: Gatos, Perros y Payasos
+     <img src="../images/lamp-4_small.webp" alt="Lámparas">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 3</p>
+   <a href="galeria-3.html">Abanicos y Mujeres Abanicos
+     <img src="../images/fanlady-2_small.webp" alt="Figurillas">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 4</p>
+   <a href="galeria-4.html">Espejos y Relojes
+     <img src="../images/mirror-6_small.webp" alt="Relojes">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 5</p>
+   <a href="galeria-5.html">Dragones y Hadas
+     <img src="../images/13%20dragon%20box_small.webp" alt="Dragones">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 6</p>
+   <a href="galeria-6.html">Jarrones, Cajas, Candelabros y Artículos Varios
+     <img src="../images/9%20chicken_small.webp" alt="Cuadros">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 7</p>
+   <a href="galeria-7.html">Atrapasoles: Pájaros, Mariposas y Cometas
+     <img src="../images/9%20chicken_small.webp" alt="Cuadros">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 8</p>
+   <a href="galeria-8.html">Atrapasoles: Abejas, Flores, Libélulas y Ranas.
+     <img src="../images/9%20chicken_small.webp" alt="Cuadros">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 9</p>
+   <a href="galeria-9.html">Atrapasoles: Caras de animales, Corazones y Globos Aerostáticos.
+     <img src="../images/9%20chicken_small.webp" alt="Cuadros">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 10</p>
+   <a href="galeria-10.html">Atrapasoles: Vida marina y Barcos
+     <img src="../images/9%20chicken_small.webp" alt="Cuadros">
+   </a>
+
+
+   <p style="color:#81FF00">Galería 11</p>
+   <a href="galeria-11.html">Atrapasoles: Artículos Navideños, Estrellas y Otros
+     <img src="../images/9%20chicken_small.webp" alt="Cuadros">
+   </a>
+
+
+   <p><a href="../contacto.html">Contacto</a></p>
+ </div>
+
+<!-- GALERÍA -->
+<div class="gallery">
+
+  <a data-fancybox="gallery1" href="../images/clock-4.webp"><img src="../images/clock-4_small.webp" alt="Baroque"></a>
+  <a data-fancybox="gallery1" href="../images/clock-5.webp"><img src="../images/clock-5_small.webp" alt="Araña"></a>
+  <a data-fancybox="gallery1" href="../images/clock-6.webp"><img src="../images/clock-6_small.webp" alt="Gato y Raton"></a>
+
+  <a data-fancybox="gallery1" href="../images/clock-7.webp"><img src="../images/clock-7_small.webp" alt="Saturn"></a>
+  <a data-fancybox="gallery1" href="../images/clock-2.webp"><img src="../images/clock-2_small.webp" alt="Piramide de Mesa"></a>
+  <a data-fancybox="gallery1" href="../images/clock-3.webp"><img src="../images/clock-3_small.webp" alt="Tiempo del Invierno"></a>
+
+  <a data-fancybox="gallery1" href="../images/clock-1.webp"><img src="../images/clock-1_small.webp" alt="Zapatas Rojas"></a>
+
+  <a data-fancybox="gallery1" href="../images/mirror-12.webp"><img src="../images/mirror-12_small.webp" alt="Arbol"></a>
+  <a data-fancybox="gallery1" href="../images/mirror-6.webp"><img src="../images/mirror-6_small.webp" alt="Estilo de Mackintosh"></a>
+  <a data-fancybox="gallery1" href="../images/mirror-8.webp"><img src="../images/mirror-8_small.webp" alt="Abanico Deco"></a>
+
+  <a data-fancybox="gallery1" href="../images/mirror-7.webp"><img src="../images/mirror-7_small.webp" alt="Cinco Peces"></a>
+  <a data-fancybox="gallery1" href="../images/mirror-1.webp"><img src="../images/mirror-1_small.webp" alt="Deco"></a>
+  <a data-fancybox="gallery1" href="../images/mirror-2.webp"><img src="../images/mirror-2_small.webp" alt="Endriago"></a>
+
+  <a data-fancybox="gallery1" href="../images/mirror-3.webp"><img src="../images/mirror-3_small.webp" alt="Tres Peces"></a>
+  <a data-fancybox="gallery1" href="../images/mirror-4.webp"><img src="../images/mirror-4_small.webp" alt="Tranquilidad"></a>
+  <a data-fancybox="gallery1" href="../images/mirror-5.webp"><img src="../images/mirror-5_small.webp" alt="Delfines"></a>
+
+  <a data-fancybox="gallery1" href="../images/mirror-11.webp"><img src="../images/mirror-11_small.webp" alt="Catedral"></a>
+  <a data-fancybox="gallery1" href="../images/mirror-13.webp"><img src="../images/mirror-13_small.webp" alt="Reflejiones de Invierno"></a>
+  <a data-fancybox="gallery1" href="../images/mirror-9.webp"><img src="../images/mirror-9_small.webp" alt="Nouveau"></a>
+
+  <a data-fancybox="gallery1" href="../images/mirror-10.webp"><img src="../images/mirror-10_small.webp" alt="Nouveau Champagne"></a>
+
+  </div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+</script>
+
+
+</body>
+</html>

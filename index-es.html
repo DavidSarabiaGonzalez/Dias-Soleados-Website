@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Días Soleados – Inicio</title>
+<meta name="description" content="Puedo diseñar y fabricar vidrios de colores a tu gusto en estilos tradicionales o modernos en alta calidad.">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="../Images/Favicon_16.webp">
+<link rel="icon" type="image/png" sizes="32x32" href="../Images/Favicon_32.webp">
+<link rel="icon" type="image/png" sizes="256x256" href="../Images/Favicon.webp">
+
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .header {
+    max-width:800px;
+    margin:0 auto;
+  }
+
+  .title {
+      font-family: 'Comic Sans MS';
+      font-style: italic;
+      font-size: 24px;
+      color:#81FF00;
+      font-weight:bold;
+    }
+
+  .container {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    border: 0;
+    border-top: 1px solid #00FF00 ;
+    border-bottom: 1px solid #00FF00;
+  }
+  .sidebar {
+    width: 170px;
+    padding: 15px;
+    border-right: 1px solid #00FF00;
+    background: #000;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .sidebar p, .sidebar a {
+    margin: 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11pt;
+    font-family: Verdana;
+    text-decoration: none;
+    display: block;
+  }
+
+  .sidebar h2 {
+    margin: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana, sans-serif;
+  }
+
+  .sidebar img {
+    border: 1px solid #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+
+  /* Contenido principal similar a galería */
+  .main-content {
+    flex: 1;
+    display: grid;
+    height: fit-content ;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .main-content img {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: block;
+  }
+
+  .main-content p {
+    font-family: cursive;
+    font-size: 15pt;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #fff;
+  }
+
+  .menu-btn {
+    display: none;
+    background: #81FF00;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  @media (max-width: 1024px) {
+
+    .main-content {
+      grid-template-columns: 1fr;
+    }
+
+    .title {
+      font-family:Verdana, sans-serif;
+      font-style: italic;
+      font-size:18px;
+      color:#81FF00;
+      font-weight:bold;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+
+    .container {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .sidebar {
+      position: fixed;
+      left: -220px;
+      top: 0;
+      height: 98%;
+      width: 180px;
+      transition: left 0.3s ease;
+      z-index: 1000;
+      overflow: scroll;
+    }
+
+    .header {
+      width: 100%;
+      margin:0 auto;
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .menu-btn {
+      display: block;
+      margin: 10px;
+    }
+
+    .title {
+      font-family:Verdana, sans-serif;
+      font-style: italic;
+      font-size:18px;
+      color:#00FF00;
+      font-weight:bold;
+    }
+
+    .main-content p {
+    font-family:Verdana, sans-serif;
+    font-style: italic;
+    font-size: 14pt;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #fff;
+  }
+
+  }
+
+</style>
+</head>
+
+<body>
+
+<!-- CONTENEDOR SUPERIOR CENTRADO -->
+<div class="header">
+
+  <!-- CENTRADOR -->
+  <div class="header">
+
+    <!-- FILA 1: LOGO + IDIOMA -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+      <!-- LOGO -->
+      <div>
+        <a href="index-es.html"><img src="images/sinfonia-logo.webp" alt="Logo" style="max-width:100%; height:auto;"></a>
+      </div>
+
+      <!-- ENLACE IDIOMA -->
+      <div style="text-align:right; margin-top:10px; flex:1;">
+        <a href="index.html" style="color:#fff; text-decoration:none; font-weight:bold; font-family:Verdana, sans-serif; font-size:16px;">
+          English Version
+          <img src="/images/anonymous-union-jack-5000572.webp" alt="EN" style="width:25px; height:15px; vertical-align:middle; margin-left:5px;">
+        </a>
+      </div>
+    </div>
+    <div style="margin-top:10px; text-align:center;">
+      <span class="title">Productos Vidrios de Color en España</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<!-- BARRA LATERAL -->
+<button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+<div class="sidebar" id="sidebar">
+  <h2><a href="index-es.html" style="font-size: 17pt;">Inicio</a></h2>
+
+  <p>&nbsp;</p>
+
+  <p style="color:#81FF00">Galería 1</p>
+  <a href="Español/galeria-1.html">Paneles y Ventanas
+    <img src="images/63 panels_small.webp" alt="Paneles">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 2</p>
+  <a href="Español/galeria-2.html">Atrapasoles: Gatos, Perros y Payasos
+    <img src="images/lamp-4_small.webp" alt="Lámparas">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 3</p>
+  <a href="Español/galeria-3.html">Abanicos y Mujeres Abanicos
+    <img src="images/fanlady-2_small.webp" alt="Figurillas">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 4</p>
+  <a href="Español/galeria-4.html">Espejos y Relojes
+    <img src="images/mirror-6_small.webp" alt="Relojes">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 5</p>
+  <a href="Español/galeria-5.html">Dragones y Hadas
+    <img src="images/13%20dragon%20box_small.webp" alt="Dragones">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 6</p>
+  <a href="Español/galeria-6.html">Jarrones, Cajas, Candelabros y Artículos Varios
+    <img src="images/9%20chicken_small.webp" alt="Cuadros">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 7</p>
+  <a href="Español/galeria-6.html">Atrapasoles: Pájaros, Mariposas y Cometas
+    <img src="images/9%20chicken_small.webp" alt="Cuadros">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 8</p>
+  <a href="Español/galeria-6.html">Atrapasoles: Abejas, Flores, Libélulas y Ranas.
+    <img src="images/9%20chicken_small.webp" alt="Cuadros">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 9</p>
+  <a href="Español/galeria-6.html">Atrapasoles: Caras de animales, Corazones y Globos Aerostáticos.
+    <img src="images/9%20chicken_small.webp" alt="Cuadros">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 10</p>
+  <a href="Español/galeria-6.html">Atrapasoles: Vida marina y Barcos
+    <img src="images/9%20chicken_small.webp" alt="Cuadros">
+  </a>
+
+
+  <p style="color:#81FF00">Galería 11</p>
+  <a href="Español/galeria-6.html">Atrapasoles: Artículos Navideños, Estrellas y Otros
+    <img src="images/9%20chicken_small.webp" alt="Cuadros">
+  </a>
+
+
+  <p><a href="contacto.html">Contacto</a></p>
+</div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="main-content">
+    <p><i>He trabajado con vidrio de colores durante más de 25 años, primero en Inglaterra donde era miembro del Gremio de Artesanos de Surrey. Ahora trabajo en la provincia de Murcia, en España, donde vivo.</i></p>
+    <p><i>Puedo diseñar y fabricar vidrios de colores a tu gusto en estilos tradicionales o modernos en alta calidad. Hay una gran selección de colores, texturas, tipos y densidades de cristal disponible.</i></p>
+    <img src="../images/27%20panels-ind.webp" alt="Paneles de Vidrio">
+    <p><i>Ya que manejo tanto la técnica tradicional con plomo como el estilo de Tiffany, puedo realizar los proyectos con un nivel de detalle mucho más fino de lo normal. Puedo hacer los productos al diseño del cliente. Los precios dependen del tamaño y nivel de complejidad.</i></p>
+    <p><i>Mi gama de trabajos incluye paneles, lámparas, relojes, espejos y figurillas etc. Pulse los enlaces a la izquierda para ver las fotos.</i></p>
+    <p><i>También puedes ver y comprar mis productos de vidrios de color en las siguientes exposiciones:</i></p>
+    <p style="color:#00FF00;">Centro Artesanía <br> <b>Calle Actor Francisco Rabal, 8 <br> 30009 Murcia.</b></p>
+    <p style="color:#00FF00;">Centro Artesanía <br> <b>Calle Honda, 16 <br> 30201 Caravaca.</b></p>
+    <p><i>Si tienes preguntas o quieres más información puedes contactarnos por correo electrónico o teléfono.</i></p>
+    <p><i>Colin o Pam - Tlf. (+34) 620 767 541</i></p>
+    <p><i>E.mail: <a href="mailto:diassoleados@gmail.com" style="color:#fff;">diassoleados@gmail.com</a></i></p>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

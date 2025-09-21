@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dias Soleados – Home</title>
+<meta name="keywords" content="Stained glass,coloured glass,tiffany lamps,vidrio,cristal,colors">
+<meta name="description" content="Stained glass and Tiffany copper foil artist, panels, windows, lamps, mirrors, clocks and other items for sale and custom made">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="../Images/Favicon_16.webp">
+<link rel="icon" type="image/png" sizes="32x32" href="../Images/Favicon_32.webp">
+<link rel="icon" type="image/png" sizes="256x256" href="../Images/Favicon.webp">
+
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .header {
+    max-width:800px; margin:0 auto;
+  }
+
+  .title {
+      font-family: 'Comic Sans MS';
+      font-style: italic;
+      font-size: 24px;
+      color:#81FF00;
+      font-weight:bold;
+    }
+
+  .container {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    border: 0;
+    border-top: 1px solid #00FF00 ;
+    border-bottom: 1px solid #00FF00;
+  }
+  .sidebar {
+    width: 170px;
+    padding: 15px;
+    border-right: 1px solid #00FF00;
+    background: #000;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .sidebar p, .sidebar a {
+    margin: 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11pt;
+    font-family: Verdana;
+    text-decoration: none;
+    display: block;
+  }
+
+  .sidebar h2 {
+    margin: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana, sans-serif;
+  }
+
+  .sidebar img {
+    border: 1px solid #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+
+  /* Contenido principal similar a galería */
+  .main-content {
+    flex: 1;
+    display: grid;
+    height: fit-content ;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .main-content img {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: block;
+  }
+
+  .main-content p {
+    font-family: cursive;
+    font-size: 15pt;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #fff;
+  }
+
+  .menu-btn {
+    display: none;
+    background: #81FF00;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  @media (max-width: 1024px) {
+
+    .main-content {
+      grid-template-columns: 1fr;
+    }
+
+    .title {
+      font-family:Verdana, sans-serif;
+      font-style: italic;
+      font-size:18px;
+      color:#81FF00;
+      font-weight:bold;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+
+    .container {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .sidebar {
+      position: fixed;
+      left: -220px;
+      top: 0;
+      height: 98%;
+      width: 180px;
+      transition: left 0.3s ease;
+      z-index: 1000;
+      overflow: scroll;
+    }
+
+    .header {
+      width: 100%;
+      margin:0 auto;
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .menu-btn {
+      display: block;
+      margin: 10px;
+    }
+
+    .title {
+      font-family:Verdana, sans-serif;
+      font-style: italic;
+      font-size:18px;
+      color:#00FF00;
+      font-weight:bold;
+    }
+
+    .main-content p {
+    font-family:Verdana, sans-serif;
+    font-style: italic;
+    font-size: 14pt;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #fff;
+  }
+
+  }
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<!-- CONTENEDOR SUPERIOR CENTRADO -->
+<div class="header">
+
+  <!-- CENTRADOR -->
+  <div class="header">
+
+    <!-- FILA 1: LOGO + IDIOMA -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+      <!-- LOGO -->
+      <div>
+        <a href="index.html"><img src="images/sinfonia-logo.webp" alt="Logo" style="max-width:100%; height:auto;"></a>
+      </div>
+
+      <!-- ENLACE IDIOMA -->
+      <div style="text-align:right; margin-top:10px; flex:1;">
+        <a href="index-es.html" style="color:#fff; text-decoration:none; font-weight:bold; font-family:Verdana, sans-serif; font-size:16px;">
+          Version Española
+          <img src="/images/España.webp" alt="ES" style="width:25px; height:15px; vertical-align:middle; margin-left:5px;">
+        </a>
+      </div>
+    </div>
+    <div style="margin-top:10px; text-align:center;">
+      <span class="title">Stained Glass Products in Spain</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<!-- BARRA LATERAL -->
+<button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+<div class="sidebar" id="sidebar">
+  <h2><a href="index.html" style="font-size: 17pt;">Home Page</a></h2>
+
+  <p>&nbsp;</p>
+
+  <p style="color:#81FF00">Gallery 1</p>
+  <a href="English/gallery-1.html">Panels and Windows
+    <img src="images/DSC03247.webp" alt="Panels">
+  </a>
+
+  <p style="color:#81FF00">Gallery 2</p>
+  <a href="English/gallery-2.html">Suncatchers: Cats, Dogs and Clowns
+    <img src="images/lamp-4_small.webp" alt="Lamps">
+  </a>
+
+  <p style="color:#81FF00">Gallery 3</p>
+  <a href="English/gallery-3.html">Fans and Fan Ladies
+    <img src="images/fanlady-2_small.webp" alt="Figurines">
+  </a>
+
+  <p style="color:#81FF00">Gallery 4</p>
+  <a href="English/gallery-4.html">Mirrors and Clocks
+    <img src="images/mirror-6_small.webp" alt="Clocks">
+  </a>
+
+  <p style="color:#81FF00">Gallery 5</p>
+  <a href="English/gallery-5.html">Dragons and Fairies
+    <img src="images/13%20dragon%20box_small.webp" alt="Dragons">
+  </a>
+
+  <p style="color:#81FF00">Gallery 6</p>
+  <a href="English/gallery-6.html">Pictures, Vases, Chessboard Sets, Butterfly Candle Holders, Boxes, Pot Pourri Holders
+    <img src="images/WIP.webp" alt="Pictures">
+  </a>
+
+  <p style="color:#81FF00">Gallery 7</p>
+  <a href="English/gallery-7.html">Suncatchers: Birds, Butterflies and Kites
+    <img src="images/WIP.webp" alt="Pictures">
+  </a>
+
+  <p style="color:#81FF00">Gallery 8</p>
+  <a href="English/gallery-8.html">Suncatchers: Bees, Flowers, Dragonflies and Frogs
+    <img src="images/WIP.webp" alt="Pictures">
+  </a>
+
+  <p style="color:#81FF00">Gallery 9</p>
+  <a href="English/gallery-9.html">Suncatchers: Animal Faces, Hearts and Hot Air Balloons
+    <img src="images/WIP.webp" alt="Pictures">
+  </a>
+
+  <p style="color:#81FF00">Gallery 10</p>
+  <a href="English/gallery-10.html">Suncatchers: Marine Life and Boats
+    <img src="images/WIP.webp" alt="Pictures">
+  </a>
+
+  <p style="color:#81FF00">Gallery 11</p>
+  <a href="English/gallery-11.html">Suncatchers: Xmas items, Stars and Others
+    <img src="images/9%20chicken_small.webp" alt="Pictures">
+  </a>
+
+  <p><a href="contacto.html">Contact</a></p>
+</div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="main-content">
+    <p><i>I have worked with stained glass for more than 25 years, originally in UK, where I was a member of the Surrey Guild of Craftsmen and now work in the Murcia region of Spain where I live permanently.</i></p>
+    <p><i>As a stained glass artist, I design and fabricate custom stained glass in contemporary and traditional styles to a very high standard, working purely with coloured glass of which there is a huge variety of colours, textures, types and densities available - I do not paint on glass.</i></p>
+    <img src="../images/27%20panels-ind.webp" alt="Glass Panels">
+    <p><i>By employing lead came (traditional leaded windows) and hand soldering (Tiffany copper foil technique) I am able to produce custom works in much finer detail than those that can be achieved by lead came alone. I am more than happy to work to customers requirements including their own designs and ideas. Prices do vary according to size and degree of complexity.</i></p>
+    <p><i>My work includes windows, panels, lamps, clocks, mirrors, and sundry items. Click the links on the left to view the galleries.</i></p>
+    <p><i>I also have items on exhibition and for sale in these locations:</i></p>
+    <p style="color:#00FF00;">Centro Artesanía <br> <b>Calle Actor Francisco Rabal, 8 <br> 30009 Murcia.</b></p>
+    <p style="color:#00FF00;">Centro Artesanía <br> <b>Calle Honda, 16 <br> 30201 Caravaca.</b></p>
+    <p><i>If you have questions or need more information please feel free to e.mail or call us.</i></p>
+    <p><i>Colin or Pam - Tlf. (0034) 620 767 541</i></p>
+    <p><i>E.mail: <a href="mailto:diassoleados@gmail.com" style="color:#fff;">diassoleados@gmail.com</a></i></p>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
