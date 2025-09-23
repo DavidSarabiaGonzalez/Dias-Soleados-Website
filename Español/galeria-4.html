@@ -222,79 +222,15 @@
 <div class="container">
  <!-- BARRA LATERAL -->
  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
- <div class="sidebar" id="sidebar">
-  <h2><a href="../index-es.html" style="font-size: 17pt;">Inicio</a></h2>
+ <div id="sidebar-container"></div>
 
-  <p>&nbsp;</p>
-
-  <p style="color:#81FF00">Galería 1</p>
-  <a href="galeria-1.html">Paneles y Ventanas
-    <img src="../images/63 panels_small.webp" alt="Paneles">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 2</p>
-  <a href="galeria-2.html">Atrapasoles: Gatos, Perros y Payasos
-    <img src="../images/lamp-4_small.webp" alt="Lámparas">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 3</p>
-  <a href="galeria-3.html">Abanicos y Mujeres Abanicos
-    <img src="../images/fanlady-2_small.webp" alt="Figurillas">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 4</p>
-  <a href="galeria-4.html">Espejos y Relojes
-    <img src="../images/mirror-6_small.webp" alt="Relojes">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 5</p>
-  <a href="galeria-5.html">Dragones y Hadas
-    <img src="../images/dragonfairy-2_small.webp" alt="Dragones">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 6</p>
-  <a href="galeria-6.html">Jarrones, Cajas, Candelabros y Artículos Varios
-    <img src="../images/chessboard-1_small.webp" alt="Cuadros">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 7</p>
-  <a href="galeria-7.html">Atrapasoles: Pájaros, Mariposas y Cometas
-    <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 8</p>
-  <a href="galeria-8.html">Atrapasoles: Abejas, Flores, Libélulas y Ranas.
-    <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 9</p>
-  <a href="galeria-9.html">Atrapasoles: Caras de animales, Corazones y Globos Aerostáticos.
-    <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 10</p>
-  <a href="galeria-10.html">Atrapasoles: Vida marina y Barcos
-    <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-  </a>
-
-
-  <p style="color:#81FF00">Galería 11</p>
-  <a href="galeria-11.html">Atrapasoles: Artículos Navideños, Estrellas y Otros
-    <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-  </a>
-
-
-  <p><a href="../contacto.html">Contacto</a></p>
-</div>
+ <script>
+   fetch("/español/sidebar.html")
+     .then(res => res.text())
+     .then(data => {
+       document.getElementById("sidebar-container").innerHTML = data;
+     });
+ </script>
 
 <!-- GALERÍA -->
 <div class="gallery">
@@ -303,29 +239,41 @@
   <a data-fancybox="gallery1" href="../images/clock-5.webp"><img src="../images/clock-5_small.webp" alt="Araña"></a>
   <a data-fancybox="gallery1" href="../images/clock-6.webp"><img src="../images/clock-6_small.webp" alt="Gato y Raton"></a>
 
+
   <a data-fancybox="gallery1" href="../images/clock-7.webp"><img src="../images/clock-7_small.webp" alt="Saturn"></a>
   <a data-fancybox="gallery1" href="../images/clock-2.webp"><img src="../images/clock-2_small.webp" alt="Piramide de Mesa"></a>
   <a data-fancybox="gallery1" href="../images/clock-3.webp"><img src="../images/clock-3_small.webp" alt="Tiempo del Invierno"></a>
 
-  <a data-fancybox="gallery1" href="../images/clock-1.webp"><img src="../images/clock-1_small.webp" alt="Zapatas Rojas"></a>
 
+  <a data-fancybox="gallery1" href="../images/clock-1.webp"><img src="../images/clock-1_small.webp" alt="Zapatas Rojas"></a>
   <a data-fancybox="gallery1" href="../images/mirror-12.webp"><img src="../images/mirror-12_small.webp" alt="Arbol"></a>
   <a data-fancybox="gallery1" href="../images/mirror-6.webp"><img src="../images/mirror-6_small.webp" alt="Estilo de Mackintosh"></a>
-  <a data-fancybox="gallery1" href="../images/mirror-8.webp"><img src="../images/mirror-8_small.webp" alt="Abanico Deco"></a>
 
+
+  <a data-fancybox="gallery1" href="../images/mirror-8.webp"><img src="../images/mirror-8_small.webp" alt="Abanico Deco"></a>
   <a data-fancybox="gallery1" href="../images/mirror-7.webp"><img src="../images/mirror-7_small.webp" alt="Cinco Peces"></a>
   <a data-fancybox="gallery1" href="../images/mirror-1.webp"><img src="../images/mirror-1_small.webp" alt="Deco"></a>
-  <a data-fancybox="gallery1" href="../images/mirror-2.webp"><img src="../images/mirror-2_small.webp" alt="Endriago"></a>
 
+
+  <a data-fancybox="gallery1" href="../images/mirror-2.webp"><img src="../images/mirror-2_small.webp" alt="Endriago"></a>
   <a data-fancybox="gallery1" href="../images/mirror-3.webp"><img src="../images/mirror-3_small.webp" alt="Tres Peces"></a>
   <a data-fancybox="gallery1" href="../images/mirror-4.webp"><img src="../images/mirror-4_small.webp" alt="Tranquilidad"></a>
-  <a data-fancybox="gallery1" href="../images/mirror-5.webp"><img src="../images/mirror-5_small.webp" alt="Delfines"></a>
 
+
+  <a data-fancybox="gallery1" href="../images/mirror-5.webp"><img src="../images/mirror-5_small.webp" alt="Delfines"></a>
   <a data-fancybox="gallery1" href="../images/mirror-11.webp"><img src="../images/mirror-11_small.webp" alt="Catedral"></a>
   <a data-fancybox="gallery1" href="../images/mirror-13.webp"><img src="../images/mirror-13_small.webp" alt="Reflejiones de Invierno"></a>
-  <a data-fancybox="gallery1" href="../images/mirror-9.webp"><img src="../images/mirror-9_small.webp" alt="Nouveau"></a>
 
+
+  <a data-fancybox="gallery1" href="../images/mirror-9.webp"><img src="../images/mirror-9_small.webp" alt="Nouveau"></a>
   <a data-fancybox="gallery1" href="../images/mirror-10.webp"><img src="../images/mirror-10_small.webp" alt="Nouveau Champagne"></a>
+  <a data-fancybox="gallery1" href="..\images\IMG_1480.webp"><img src="..\images\IMG_1480.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC02981.webp"><img src="..\images\DSC02981.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03040.webp"><img src="..\images\DSC03040.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03070.webp"><img src="..\images\DSC03070.webp" alt=""></a>
+
 
   </div>
 </div>

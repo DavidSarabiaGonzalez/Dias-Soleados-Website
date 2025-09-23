@@ -222,86 +222,69 @@
 <div class="container">
   <!-- BARRA LATERAL -->
   <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
-  <div class="sidebar" id="sidebar">
-    <h2><a href="../index-es.html" style="font-size: 17pt;">Inicio</a></h2>
+  <div id="sidebar-container"></div>
 
-    <p>&nbsp;</p>
-
-    <p style="color:#81FF00">Galería 1</p>
-    <a href="galeria-1.html">Paneles y Ventanas
-      <img src="../images/63 panels_small.webp" alt="Paneles">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 2</p>
-    <a href="galeria-2.html">Atrapasoles: Gatos, Perros y Payasos
-      <img src="../images/lamp-4_small.webp" alt="Lámparas">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 3</p>
-    <a href="galeria-3.html">Abanicos y Mujeres Abanicos
-      <img src="../images/fanlady-2_small.webp" alt="Figurillas">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 4</p>
-    <a href="galeria-4.html">Espejos y Relojes
-      <img src="../images/mirror-6_small.webp" alt="Relojes">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 5</p>
-    <a href="galeria-5.html">Dragones y Hadas
-      <img src="../images/dragonfairy-2_small.webp" alt="Dragones">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 6</p>
-    <a href="galeria-6.html">Jarrones, Cajas, Candelabros y Artículos Varios
-      <img src="../images/chessboard-1_small.webp" alt="Cuadros">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 7</p>
-    <a href="galeria-7.html">Atrapasoles: Pájaros, Mariposas y Cometas
-      <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 8</p>
-    <a href="galeria-8.html">Atrapasoles: Abejas, Flores, Libélulas y Ranas.
-      <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 9</p>
-    <a href="galeria-9.html">Atrapasoles: Caras de animales, Corazones y Globos Aerostáticos.
-      <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 10</p>
-    <a href="galeria-10.html">Atrapasoles: Vida marina y Barcos
-      <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-    </a>
-
-
-    <p style="color:#81FF00">Galería 11</p>
-    <a href="galeria-11.html">Atrapasoles: Artículos Navideños, Estrellas y Otros
-      <img src="../images/9%20chicken_small.webp" alt="Cuadros">
-    </a>
-
-
-    <p><a href="../contacto.html">Contacto</a></p>
-  </div>
+<script>
+  fetch("/español/sidebar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("sidebar-container").innerHTML = data;
+    });
+</script>
 
 <!-- GALERÍA -->
 <div class="gallery">
 
-<a data-fancybox="gallery1" href="..\images/WIP.webp"><img src="..\images/WIP.webp" alt="Patos Volando - Ejemplo"></a>
-<a data-fancybox="gallery1" href="..\images/WIP.webp"><img src="..\images/WIP.webp" alt="Patos Volandos"></a>
-<a data-fancybox="gallery1" href="..\images/WIP.webp"><img src="..\images/WIP.webp" alt="Rosas y Diamantes"></a>
+<a data-fancybox="gallery1" href="..\images/DSC02861.webp"><img src="..\images/DSC02861.webp" alt="Patos Volando - Ejemplo"></a>
+<a data-fancybox="gallery1" href="..\images/IMG_0590.webp"><img src="..\images/IMG_0590.webp" alt="Patos Volandos"></a>
+<a data-fancybox="gallery1" href="..\images/IMG_0603.webp"><img src="..\images/IMG_0603.webp" alt="Rosas y Diamantes"></a>
+
+
+<a data-fancybox="gallery1" href="..\images/IMG_0658.webp"><img src="..\images/IMG_0658.webp" alt="Patos Volando - Ejemplo"></a>
+<a data-fancybox="gallery1" href="..\images/DSC03261.webp"><img src="..\images/DSC03261.webp" alt="Patos Volandos"></a>
+<a data-fancybox="gallery1" href="..\images/DSC03244.webp"><img src="..\images/DSC03244.webp" alt="Rosas y Diamantes"></a>
+
+
+<a data-fancybox="gallery1" href="..\images/DSC03232.webp"><img src="..\images/DSC03232.webp" alt="Patos Volando - Ejemplo"></a>
+<a data-fancybox="gallery1" href="..\images/DSC03241.webp"><img src="..\images/DSC03241.webp" alt="Patos Volandos"></a>
+<a data-fancybox="gallery1" href="..\images/DSC03246.webp"><img src="..\images/DSC03246.webp" alt="Rosas y Diamantes"></a>
+
+
+<a data-fancybox="gallery1" href="..\images/DSC02845.webp"><img src="..\images/DSC02845.webp" alt="Patos Volando - Ejemplo"></a>
+<a data-fancybox="gallery1" href="..\images/DSC03227.webp"><img src="..\images/DSC03227.webp" alt="Patos Volandos"></a>
+<a data-fancybox="gallery1" href="..\images/IMG_0656.webp"><img src="..\images/IMG_0656.webp" alt="Rosas y Diamantes"></a>
+
+
+<a data-fancybox="gallery1" href="..\images/DSC02892.webp"><img src="..\images/DSC02892.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/DSC02912.webp"><img src="..\images/DSC02912.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/DSC02915.webp"><img src="..\images/DSC02915.webp" alt=""></a>
+
+
+<a data-fancybox="gallery1" href="..\images/DSC02916.webp"><img src="..\images/DSC02916.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/DSC02979.webp"><img src="..\images/DSC02979.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/DSC02993.webp"><img src="..\images/DSC02993.webp" alt=""></a>
+
+
+<a data-fancybox="gallery1" href="..\images/IMG_0632.webp"><img src="..\images/IMG_0632.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/IMG_0631.webp"><img src="..\images/IMG_0631.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/DSC03245.webp"><img src="..\images/DSC03245.webp" alt=""></a>
+
+
+<a data-fancybox="gallery1" href="..\images/DSC02938.webp"><img src="..\images/DSC02938.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/DSC03036.webp"><img src="..\images/DSC03036.webp" alt="" ></a>
+<a data-fancybox="gallery1" href="..\images/DSC03037.webp"><img src="..\images/DSC03037.webp" alt=""></a>
+
+
+<a data-fancybox="gallery1" href="..\images/DSC02874.webp"><img src="..\images/DSC02874.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/IMG_0600.webp"><img src="..\images/IMG_0600.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/IMG_0599.webp"><img src="..\images/IMG_0599.webp" alt=""></a>
+
+
+<a data-fancybox="gallery1" href="..\images/DSC02924.webp"><img src="..\images/DSC02924.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/DSC02927.webp"><img src="..\images/DSC02927.webp" alt=""></a>
+<a data-fancybox="gallery1" href="..\images/DSC02976.webp"><img src="..\images/DSC02976.webp" alt=""></a>
+
+
 
 
 </div>
