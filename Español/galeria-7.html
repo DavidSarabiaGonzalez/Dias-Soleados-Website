@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="es">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Días Soleados – Pajaros, Mariposas y Cometas</title>
+  <meta name="keywords" content="Vidrio,cristal,color,colores,stained glass,vidrio de colores,cristal de colores">
+  <meta name="description" content="Puedo diseñar y fabricar vidrios de colores a tu gusto en estilos tradicionales o modernos en alta calidad. Hay una gran selección de colores, texturas, tipos y densidades de cristal disponible.">
+
+<!-- Lightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+<link rel="icon" type="image/png" sizes="16x16" href="../Images/Favicon_16.webp">
+<link rel="icon" type="image/png" sizes="32x32" href="../Images/Favicon_32.webp">
+<link rel="icon" type="image/png" sizes="256x256" href="../Images/Favicon.webp">
+
+<style>
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+  }
+
+  .header {
+    max-width:800px;
+    margin:0 auto;
+  }
+
+  .title {
+      font-family: 'Comic Sans MS';
+      font-style: italic;
+      font-size: 24px;
+      color:#81FF00;
+      font-weight:bold;
+    }
+
+    .container {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    border: 0;
+    border-top: 1px solid #00FF00 ;
+    border-bottom: 1px solid #00FF00;
+  }
+    .sidebar {
+    width: 170px;
+    padding: 15px;
+    border-right: 1px solid #00FF00;
+    background: #000;
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .sidebar p, .sidebar a {
+    margin: 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11pt;
+    font-family: Verdana;
+    text-decoration: none;
+    display: block;
+  }
+
+  .sidebar h2 {
+    margin: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana, sans-serif;
+  }
+
+  .sidebar img {
+    border: 1px solid #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 15px;
+    justify-items: center;
+    padding: 15px;
+    height: fit-content;
+  }
+  .gallery img {
+    border: 3px solid #fff;
+    width: 200px;
+    height: 200px;
+    transition: border-color 0.5s ease;
+  }
+
+  .gallery img:hover{
+    border: 3px solid #00FF00;
+  }
+
+
+  /* BOTÓN MENÚ SOLO EN MÓVIL/TABLET */
+  .menu-btn {
+    display: none;
+    background: #00FF00;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+  }
+  .title {
+      font-family:Verdana, sans-serif;
+      font-style: italic;
+      font-size:18px;
+      color:#81FF00;
+      font-weight:bold;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header {
+      width: 100%;
+      margin:0 auto;
+    }
+
+  /* Sidebar oculta por defecto en móvil */
+  .sidebar {
+    position: fixed;
+    left: -220px;
+    top: 0;
+    height: 98%;
+    width: 180px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow: scroll;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  /* Botón menú visible en móvil */
+  .menu-btn {
+    display: block;
+    margin: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 0.5fr);
+    padding: 15px;
+    gap: 15px;
+  }
+  .gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid #81FF00;
+  }
+
+  .title {
+      font-family:Verdana, sans-serif;
+      font-style: italic;
+      font-size:18px;
+      color:#00FF00;
+      font-weight:bold;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- CONTENEDOR SUPERIOR CENTRADO -->
+<div class="header">
+
+  <!-- CENTRADOR -->
+  <div class="header">
+
+    <!-- FILA 1: LOGO + IDIOMA -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+      <!-- LOGO -->
+      <div>
+        <a href="../index-es.html"><img src="../images/sinfonia-logo.webp" alt="Logo" style="max-width:100%; height:auto;"></a>
+      </div>
+
+      <!-- ENLACE IDIOMA -->
+      <div style="text-align:right; margin-top:10px; flex:1;">
+        <a href="../English/gallery-7.html" style="color:#fff; text-decoration:none; font-weight:bold; font-family:Verdana, sans-serif; font-size:14px;">
+          English Version
+          <img src="../images/anonymous-union-jack-5000572.webp" alt="EN" style="width:25px; height:15px; vertical-align:middle; margin-left:5px;">
+        </a>
+      </div>
+    </div>
+
+    <!-- FILA 2: TÍTULOS -->
+    <div style="margin-top:10px; text-align:center;">
+      <span class="title"  style="color:#00FF00; font-weight:bold;">Galería 7</span>
+      <span class="title" style="color:#FFFFFF;"> - Pajaros, Mariposas y Cometas</span>
+      <span class="title" style="color:#d7d7d7; font-weight: 400;"> - Pulse las imágenes para ver versiones más grandes</span>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <!-- BARRA LATERAL -->
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <div id="sidebar-container"></div>
+
+<script>
+  fetch("/español/sidebar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("sidebar-container").innerHTML = data;
+    });
+</script>
+
+<!-- GALERÍA -->
+<div class="gallery">
+
+  <a data-fancybox="gallery1" href="..\images\DSC03059.webp"><img src="..\images\DSC03059.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02853.webp"><img src="..\images\DSC02853.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03074.webp"><img src="..\images\DSC03074.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\IMG_0617.webp"><img src="..\images\IMG_0617.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02854.webp"><img src="..\images\DSC02854.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03014.webp"><img src="..\images\DSC03014.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03269.webp"><img src="..\images\DSC03269.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02930.webp"><img src="..\images\DSC02930.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02931.webp"><img src="..\images\DSC02931.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC02932.webp"><img src="..\images\DSC02932.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03003.webp"><img src="..\images\DSC03003.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03073.webp"><img src="..\images\DSC03073.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03340.webp"><img src="..\images\DSC03340.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02913.webp"><img src="..\images\DSC02913.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02941.webp"><img src="..\images\DSC02941.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC02950.webp"><img src="..\images\DSC02950.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03018.webp"><img src="..\images\DSC03018.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03280.webp"><img src="..\images\DSC03280.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03279.webp"><img src="..\images\DSC03279.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02885.webp"><img src="..\images\DSC02885.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02886.webp"><img src="..\images\DSC02886.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03220.webp"><img src="..\images\DSC03220.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03221.webp"><img src="..\images\DSC03221.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03159.webp"><img src="..\images\DSC03159.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03296.webp"><img src="..\images\DSC03296.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03276.webp"><img src="..\images\DSC03276.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03302.webp"><img src="..\images\DSC03302.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03275.webp"><img src="..\images\DSC03275.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03079.webp"><img src="..\images\DSC03079.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03080.webp"><img src="..\images\DSC03080.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\IMG_0583.webp"><img src="..\images\IMG_0583.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\IMG_0652.webp"><img src="..\images\IMG_0652.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02889.webp"><img src="..\images\DSC02889.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03293.webp"><img src="..\images\DSC03293.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03145.webp"><img src="..\images\DSC03145.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03146.webp"><img src="..\images\DSC03146.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC03147.webp"><img src="..\images\DSC03147.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03274.webp"><img src="..\images\DSC03274.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\IMG_0571.webp"><img src="..\images\IMG_0571.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\IMG_0573.webp"><img src="..\images\IMG_0573.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\IMG_0653.webp"><img src="..\images\IMG_0653.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\IMG_0654.webp"><img src="..\images\IMG_0654.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\IMG_0655.webp"><img src="..\images\IMG_0655.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC03076.webp"><img src="..\images\DSC03076.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02894.webp"><img src="..\images\DSC02894.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\DSC02895.webp"><img src="..\images\DSC02895.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\IMG_0576.webp"><img src="..\images\IMG_0576.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\IMG_0577.webp"><img src="..\images\IMG_0577.webp" alt=""></a>
+  <a data-fancybox="gallery1" href="..\images\IMG_0659.webp"><img src="..\images\IMG_0659.webp" alt=""></a>
+
+
+  <a data-fancybox="gallery1" href="..\images\DSC02982.webp"><img src="..\images\DSC02982.webp" alt=""></a>
+
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+</script>
+
+
+</body>
+</html>
