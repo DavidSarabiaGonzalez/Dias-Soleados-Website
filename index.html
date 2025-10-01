@@ -20,7 +20,8 @@
   }
 
   .header {
-    max-width:800px; margin:0 auto;
+    max-width:800px;
+    margin:0 auto;
   }
 
   .title {
@@ -33,7 +34,8 @@
 
   .container {
     display: flex;
-    width: 40%;
+    width: 90%;
+    max-width: 800px;
     height: 100%;
     margin: auto;
     border: 0;
@@ -41,7 +43,8 @@
     border-bottom: 1px solid #00FF00;
   }
   .sidebar {
-    width: 170px;
+
+    max-width: 170px;
     padding: 15px;
     border-right: 1px solid #00FF00;
     background: #000;
@@ -81,7 +84,8 @@
   .main-content {
     flex: 1;
     display: grid;
-    height: fit-content ;
+    max-width: 100%;
+    height: fit-content;
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 15px;
@@ -99,7 +103,7 @@
     font-family: cursive;
     font-size: 15pt;
     line-height: 1.5;
-    margin: 10px 0;
+    margin: 0px 0;
     color: #fff;
   }
 
@@ -122,7 +126,7 @@
     .title {
       font-family:Verdana, sans-serif;
       font-style: italic;
-      font-size:18px;
+      font-size:24px;
       color:#81FF00;
       font-weight:bold;
     }
@@ -133,7 +137,9 @@
 
     .container {
       flex-direction: column;
+      max-width: 768px;
       width: 100%;
+      overflow: hidden;
     }
 
     .sidebar {
@@ -169,10 +175,16 @@
       font-weight:bold;
     }
 
+    .main-content {
+      max-width: 768px;
+      gap: 0px;
+      padding: 0px;
+    }
+
     .main-content p {
     font-family:Verdana, sans-serif;
     font-style: italic;
-    font-size: 14pt;
+    font-size: 12.8pt;
     line-height: 1.5;
     margin: 10px 0;
     color: #fff;
@@ -181,6 +193,8 @@
   }
 
 </style>
+
+
 </head>
 
 <body>
