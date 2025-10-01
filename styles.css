@@ -19,7 +19,8 @@ body {
 
     .container {
     display: flex;
-    width: 40%;
+    width: 90%;
+    max-width: 800px;
     height: 100%;
     margin: auto;
     border: 0;
@@ -112,7 +113,9 @@ body {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    max-width: 768px;
     width: 100%;
+    overflow: hidden;
   }
 
   .header {
@@ -143,9 +146,10 @@ body {
   }
 
   .gallery {
+    max-width: 768px;
     grid-template-columns: repeat(2, 0.5fr);
-    padding: 15px;
-    gap: 15px;
+    padding: 0px;
+    gap: 0px;
   }
   .gallery img {
     width: 100%;
